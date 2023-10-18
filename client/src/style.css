@@ -1,0 +1,326 @@
+.App {
+    height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 75px;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border: none;
+    padding: 3px 6px;
+    background-color: rgb(255, 56, 56);
+    color: white;
+    cursor: pointer;
+}
+
+.addHome{
+    color: rgb(255, 251, 251);
+    background-color: rgb(133, 111, 255);
+    font-size: 27px;
+    margin: auto;
+    display: block;
+    border: none;
+    padding: 10px;
+    gap: 10px;
+}
+
+.header{
+    display: block; 
+    margin:0 auto;
+    width: 700px;
+    
+  }
+
+.addHome:hover{
+transform: scale(1.1);
+    cursor: pointer; 
+   
+
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    color:rgba(0, 0, 147, 0.564);
+    text-align: center;
+    
+
+
+}
+
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+}
+
+
+p{
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+       
+        display: inline-block;
+        overflow: hidden;
+        animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+        border-right: 2px solid #000;
+      }
+      span{
+        font-size: 30px;
+      }
+    
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+    
+      @keyframes blink-caret {
+        from, to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: #000;
+        }
+      }
+
+      .books {
+        display: flex;
+        justify-content: space-between; /* Distribute books evenly */
+        gap: 10px;
+      }
+      
+      .book {
+        flex: 0 0 calc(33.33% - 10px); /* Ensure equal width for each book */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+      
+
+.delete{
+    border: none;
+    padding: 3px 6px;
+    background-color: white;
+    cursor: pointer;
+    color: rgb(255, 56, 56);
+    font-size: 20px;
+}
+.delete:hover{
+    background-color: rgb(228, 130, 130);
+}
+
+.update{
+    border: none;
+    padding: 6px;
+    padding-top: 6px;
+
+    background-color: white;
+    cursor: pointer;
+    color:rgb(0, 209, 209);
+    font-size: 20px;
+}
+
+.update:hover{
+    cursor:pointer;
+   background-color:aquamarine;
+}
+
+img{
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    background-color: rgb(253, 46, 88);
+}
+
+/* Form styling */
+.form{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    border: 10px solid rgb(0, 209, 209);
+    border-radius: 7px;
+    margin: auto;
+    display: block;
+    font-size:30px ;
+    text-align: center;
+
+}
+textarea{
+    width: 700px;
+    margin: auto;
+    display: block;
+    font-size: 35px;
+    border: 10px solid rgb(0, 209, 209);
+    text-align: center;
+
+}
+
+.formButton{
+    border: none;
+    padding: 10px;
+background-color: rgb(133, 111, 255);
+color:white;
+font-size: 30px;
+font-weight: bold;
+cursor: pointer;
+width: 120px;
+margin: auto;
+display: block;
+
+}
+
+
+
+/* blog content */
+/* Blog Content Styling */
+.blog-content {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .blog-content h2 {
+    font-size: 54px;
+    color:  rgb(133, 111, 255);
+    margin-top: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .blog-content h3 {
+    font-size: 48px;
+    margin-top: 20px;
+    color:  rgb(133, 111, 255);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .blog-content p {
+    font-size: 36px;
+    line-height: 1.6;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-align:center;
+  }
+  
+  .blog-content ul,
+  .blog-content ol {
+    margin: 10px 0;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    gap: 10px;
+    border:1px ;
+    
+    color: rgb(0, 0, 0);
+    list-style: none;
+   
+  }
+  .dev{
+    text-align: center;
+    font-size: 67px;
+  }
+  
+  .blog-content li {
+    margin: 5px 0;
+    font-size: 34px;
+    gap: 10px;
+    
+  }
+  
+  /* Text Animation (e.g., Fade-In) */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .blog-content {
+    animation: fadeIn 1s; /* Apply the animation to the blog content */
+  }
+
+  .headline {
+    animation: popUp 1s ease infinite;
+  }
+
+  @keyframes popUp {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+   .blog{
+    width:850px;
+    height: 370px;
+    margin:0 auto;
+    display: block;
+    border: 20px solid rgb(253, 46, 88);
+    border-radius: 4px;
+   }
+
+   .form a {
+    display: inline-block;
+    background-color: #78ddff; /* Baby blue color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 24px;
+    margin: auto;
+    display: block;
+  }
+  
+  .form a:hover {
+    background-color: #66a3d2; /* Lighter shade of blue on hover */
+  }
+
+  .addBook{
+    display: inline-block;
+    background-color: rgb(255, 56, 56); /* Baby blue color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 24px;
+    margin: auto;
+    display: block;
+  }
+
+  .addBook:hover{
+    cursor: pointer;
+    background-color: rgb(255, 41, 41);
+  }
